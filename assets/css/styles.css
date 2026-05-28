@@ -1,0 +1,62 @@
+:root {
+  /* colors */
+  --green-dark: #2d6a4f;
+  --green-medium: #52b788;
+  --orange: #f4a261;
+  --gray-light: #e8e8e4;
+  --bg-body: #f8f7f2;
+  --bg-white: #ffffff;
+  --text-main: #1c1c1c;
+  --text-light: #ffffff;
+
+  /* spacings */
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 48px;
+  --space-xl: 80px;
+  --space-xxl: 96px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.badge,
+.legends {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+}
