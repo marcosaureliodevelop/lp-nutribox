@@ -34,6 +34,10 @@
   color: var(--text-main);
 }
 
+body {
+  background-color: var(--bg-body);
+}
+
 h1,
 h2,
 h3,
@@ -166,4 +170,42 @@ nav {
   color: rgba(255, 255, 255, 0.85);
   max-width: 580px;
   margin-bottom: 40px;
+}
+
+/* BENEFITS */
+.benefits {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 48px 0;
+  gap: var(--space-m);
+}
+
+.benefits .card {
+  padding: var(--space-m);
+  border: 1px solid #E8E8E4;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.benefits .card .card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.benefits .card h4 {
+  font-size: 17px;
+  font-weight: var(--font-semibold);
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+
+.benefits .card p {
+  font-size: 14px;
+  color: #555555;
 }
