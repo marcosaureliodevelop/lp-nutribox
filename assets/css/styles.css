@@ -8,6 +8,7 @@
   --bg-white: #ffffff;
   --text-main: #1c1c1c;
   --text-light: #ffffff;
+  --text-gray: #555555;
 
   /* SPACINGS */
   --space-xs: 8px;
@@ -67,6 +68,20 @@ h3 {
 .legends {
   font-size: 13px;
   font-weight: var(--font-medium);
+}
+
+.badge {
+  color: var(--text-light);
+  background-color: var(--green-medium);
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .section-header {
@@ -191,11 +206,7 @@ nav {
 }
 
 .benefits .container {
-  display: flex;
-  flex-direction: row;
   gap: var(--space-m);
-  width: 1100px;
-  margin: 0 auto;
 }
 
 .benefits .card {
@@ -224,5 +235,78 @@ nav {
 
 .benefits .card p {
   font-size: 14px;
-  color: #555555;
+  color: var(--text-gray);
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl) 0;
+}
+
+.menu .container {
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.menu .showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-m);
+}
+
+.menu .card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px #00000008;
+  overflow: hidden;
+}
+
+.menu .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu .card .card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.menu .card .checked-icon {
+  color: var(--green-medium);
+}
+
+.menu .card .card-header h3 {
+  max-width: 200px;
+}
+
+.menu .card .card-wrapper {
+  padding: var(--space-m);
+}
+
+.menu .card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space-xs) / 2);
+  margin-bottom: var(--space-s);
+}
+
+.menu .card ul li {
+  color: var(--text-gray);
+}
+
+.menu .card .price {
+  font-size: 22px;
+  font-weight: var(--font-bold);
+  color: var(--green-dark);
 }
