@@ -310,3 +310,53 @@ nav {
   font-weight: var(--font-bold);
   color: var(--green-dark);
 }
+
+/* HOW WORKS */
+
+.how-works {
+  padding: var(--space-xl) 0;
+  background-color: var(--bg-white);
+}
+
+.how-works .container {
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.how-works .steps-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .how-works .steps-wrapper::after {
+  content: ' ';
+  position: absolute;
+  right: 200px;
+  top: 200px;
+  width: 500px;
+  border-top: 2px solid black;
+} */
+
+.how-works .step {
+  position: relative;
+  width: 200px;
+}
+
+.how-works .step h6 {
+  font-size: 48px;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+
+.how-works .step h4 {
+  font-size: 18px;
+  font-weight: var(--font-semibold);
+  color: var(--green-dark);
+  margin-bottom: 6px;
+}
+
+.how-works .step p {
+  font-size: 14px;
+  color: var(--text-gray);
+}
