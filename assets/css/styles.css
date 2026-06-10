@@ -429,3 +429,44 @@ nav {
   font-weight: var(--font-semibold);
   color: var(--green-dark);
 }
+
+/* FOOTER */
+
+footer {
+  padding: 64px;
+  background-color: var(--green-dark);
+}
+
+footer h3 {
+  color: var(--text-light);
+}
+
+footer .container {
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+footer .informations {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-m);
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+footer .about p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer .fast-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
