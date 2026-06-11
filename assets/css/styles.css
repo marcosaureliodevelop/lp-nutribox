@@ -74,7 +74,7 @@ hr {
 /* PATTERNS */
 
 .badge,
-.legends {
+.legend {
   font-size: 13px;
   font-weight: var(--font-medium);
 }
@@ -129,6 +129,7 @@ button:hover {
 }
 
 /* NAV */
+
 nav {
   display: flex;
   flex-direction: row;
@@ -167,6 +168,7 @@ nav {
 }
 
 /* HERO */
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -207,6 +209,7 @@ nav {
 }
 
 /* BENEFITS */
+
 .benefits {
   display: flex;
   flex-direction: column;
@@ -265,15 +268,12 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   gap: var(--space-m);
 }
 
 .menu .card {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
   min-width: 300px;
   flex-grow: 1;
   background-color: var(--bg-white);
@@ -433,7 +433,6 @@ nav {
 /* FOOTER */
 
 footer {
-  padding: 64px;
   background-color: var(--green-dark);
 }
 
@@ -443,7 +442,6 @@ footer h3 {
 
 footer .container {
   flex-direction: column;
-  gap: var(--space-m);
 }
 
 footer .informations {
@@ -457,6 +455,7 @@ footer .col {
   flex-direction: column;
   gap: 16px;
   width: 100%;
+  padding: 64px 0;
 }
 
 footer .about p {
@@ -464,9 +463,58 @@ footer .about p {
   color: rgba(255, 255, 255, 0.8);
 }
 
+footer .fast-links h4 {
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  color: var(--text-light);
+}
+
 footer .fast-links ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
   list-style: none;
+}
+
+footer .fast-links ul li a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+footer .fast-links ul li a:hover {
+  color: var(--orange);
+}
+
+footer .contact h4 {
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  color: var(--text-light);
+}
+
+footer .contact address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-style: normal;
+}
+
+footer .contact address a {
+  text-decoration: none;
+}
+
+footer .contact address a,
+footer .contact address p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+footer .legend {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .subfooter {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: var(--space-m) 0;
 }
